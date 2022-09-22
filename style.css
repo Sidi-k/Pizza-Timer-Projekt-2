@@ -1,0 +1,112 @@
+.background-dark {
+  background-color: #262626;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-top {
+  margin-top: 250px;
+}
+
+.timer {
+  font-family: "Quantico", sans-serif;
+
+  font-size: 8rem;
+  color: white;
+  text-shadow: 2px 5px 10px rgb(2, 48, 255);
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 3px 5px rgb(2, 48, 255);
+}
+button {
+  font-family: "Roboto", sans-serif;
+  color: rgb(242, 243, 247);
+  font-size: 25px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  margin-top: 4rem;
+}
+
+/* From uiverse.io by @mrhyddenn */
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: rgb(219, 220, 226);
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgba(2, 48, 255, 0.514);
+  box-shadow: 0 0 20px 5px rgba(26, 138, 230, 0.521);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 50px 15px rgb(255, 255, 255);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
