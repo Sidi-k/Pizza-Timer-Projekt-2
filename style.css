@@ -1,17 +1,14 @@
 .background-dark {
   background-color: #262626;
 }
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .margin-top {
   margin-top: 250px;
 }
-
 .timer {
   font-family: "Quantico", sans-serif;
 
@@ -36,7 +33,6 @@ button {
   border: none;
   margin-top: 4rem;
 }
-
 /* From uiverse.io by @mrhyddenn */
 button {
   position: relative;
@@ -55,7 +51,6 @@ button {
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
 button:hover {
   background: rgba(2, 48, 255, 0.514);
   box-shadow: 0 0 20px 5px rgba(26, 138, 230, 0.521);
@@ -63,13 +58,11 @@ button:hover {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 button:hover::before {
   -webkit-animation: sh02 0.5s 0s linear;
   -moz-animation: sh02 0.5s 0s linear;
   animation: sh02 0.5s 0s linear;
 }
-
 button::before {
   content: "";
   display: block;

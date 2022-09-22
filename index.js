@@ -19,15 +19,15 @@ function startTimer() {
         let text = "0" + minutes + " : " + seconds;
         timer.innerHTML = text;
       } else {
-        alarm.play();
-        alarm.loop = false;
+        alarm.play(1);
+        alarm.loop = true;
         alarm.volume = 1.0;
-        alarm.playbackRate = 1;
+        alarm.playbackRate = 5;
         alarm.pause;
         timer.innerHTML = "00 : 00";
       }
     }, 1000);
     timerStarted = true;
+    return
   }
 }
-
